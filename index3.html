@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+    <style>
+        .city{
+            animation: cit 20s linear infinite reverse;
+        }
+        @keyframes cit {
+            50%{
+                transform: translateX(-300px);
+            }
+        }
+        .road{
+            animation: ro 10s linear infinite ;
+        }
+        @keyframes ro {
+            100%{
+                transform: translateX(-300px);
+            }
+        }
+        .wheel{
+            animation-name: wheels;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            animation-timing-function: linear;
+        }
+        @keyframes wheels {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .sun{
+            animation: su 10s linear infinite reverse;
+        }
+        @keyframes su {
+            from{
+                right: -70%;
+            }
+            to{
+                resize: -85%;
+            }
+        } 
+    </style>
+</head>
+<body >
+    <img style="position: fixed; width: 100%; left: 0%;" src="./sky__1_.jpg" alt="Error">
+    <img class="city" style="position: absolute; width: 150%; height: 42%; top: 26%;" src="city__1_.png" alt="city gone ">
+    <img class="road" style="position: fixed; width: 150%; bottom: 1%; height: 31%;" src="./road__1_.jpg" alt="muddy road">
+    <img style="position: fixed; width: 31%; bottom: 19%; height: 31%; left: 35%;" src="./car2.png" alt="car is gone">
+    <img class="wheel" style="position: fixed; width: 5%; bottom: 19%; left: 37.2%;" src="./wheel__1_.png" alt="punchured">
+    <img class="wheel" style="position: fixed; width: 5%; bottom: 19%; left: 57.7%;" src="./wheel__1_.png" alt="punchured">
+    <img style="position: fixed ; left: 62%; width: 4%; bottom: 36%;" src="./flag.png" alt="flag">
+    <img class="sun" style="position: relative; right: -85%; width: 12%;" src="./sun.png" alt="sun is resting">
+    <div style="position: fixed; left: 34%; font-size: 32px; top: 5%;">
+        <span style="background-color: orange;">HAPPY</span> <span style="background-color: white;">INDEPENDENCE</span> <span style="background-color: green;">DAY</span>
+    </div>
+</body>
+</html>
